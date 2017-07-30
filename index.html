@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="ja" charset="utf-8">
+    </head>
+    <body>
+        <form name="f1">
+            <input type="text" name="height">cm
+            <div onclick="calc1()">Otokurahに変換する</div>
+            <input type="text" name="weight">kg
+            <div onclick="calc2()">Otokurawに変換する</div>
+        </form>
+        
+        
+<!--==================================================
+script
+====================================================-->
+        <script type="text/javascript">
+        function calc1() {
+            var x = parseFloat(document.f1.height.value);
+            var y = x / 164;
+            alert( x + "cmは" + y + "Otokuraです")
+        }
+        function calc2() {
+            var xx = parseFloat(document.f1.weight.value);
+            var yy = xx / 40;
+            alert(xx + "kgは" + yy + "Otokurawです")
+        }
+        </script>
+    </body>
+</html>
